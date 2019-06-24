@@ -1,0 +1,157 @@
+
+/* Reglas CSS para elementos HTML */
+
+:root {
+  --cwhite: #f7f9fb;
+  --cpurple: #5d4d97;
+  --ccream: #eeba9f;
+  --clightp: #c383ac;
+  --cblack: #000000;
+
+  --fsize1: 20px;
+  --fsize2: 18px;
+  --fsize3: 16px;
+}
+
+body{
+  /* margen interna */
+  padding: 0px;
+  /* margen externa */
+  margin: 0px;
+  /* fuentes, varias fuentes por descarte */
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  /* px pixels */
+  font-size: var(--fsize3);
+}
+
+h1 {
+  /* color de primer plano */
+  color: #000000;
+  /* tamaño de la fuente */
+  font-size: var(--fsize1);
+  /* grosor de la fuente */
+  font-weight: bold;
+  margin: 0px;
+
+}
+
+h2 {
+  color: #000000;
+  font-size: var(--fsize2);
+  font-weight: bold;
+  margin: 0px;
+}
+
+p {
+  /* margen arriba */
+  margin-top: 10px;
+  /* margen abajo */
+  margin-bottom: 10px;
+}
+
+.header{
+  /* ancho % medida relativa */
+  width: 100%;
+  /* color de fondo */
+  background-color: var(--cpurple);
+  /* posición flexible y en linea de los elementos */
+  display: inline-flex;
+  /* afectar la distribución de los elementos */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-brand {
+  margin: 0px;
+}
+
+.header-menu {
+  margin-right: 20px;
+}
+
+nav ol {
+  display: inline-flex;
+}
+
+nav ol li {
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav ol li a {
+  color: var(--cwhite);
+  text-decoration: none;
+}
+
+nav ol li a:hover {
+  color: var(--ccream);
+}
+
+.presentation {
+  text-align: center;
+  margin: 5%;
+}
+
+.products{
+  width:100%;
+  background-image: url("../images/fondo.png");
+  background-repeat: no-repeat;
+  background-size: 100% 70%;
+  background-position: bottom;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.products-article{
+  background-color: var(--cwhite);
+  border: 1px solid var(--cpurple);
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+}
+
+.products-image{
+  margin: 0px;
+  text-align: center;
+}
+
+.products-photo{
+  width: 100%;
+}
+
+.products-button{
+
+}
+
+.bebes {
+  width: 100%;
+  background-color: cadetblue;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bebes-title {
+  width: 100%;
+  background-color:red;
+  text-align:center;
+  padding: 30px;
+}
+
+.bebes-article {
+  background-color:organge;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+}
+.bebes-image {
+  margin: 0px;
+  text-align: center;
+}
+
+.bebes-photo{
+  width: 100%;
+}
